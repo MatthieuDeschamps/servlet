@@ -13,6 +13,9 @@
     </head>
     <body>
         <h1>miam miam</h1>
-        <img src="/img/01.jpg">
+        
+        <img src="mamNoel.png" width="306" height="501" alt="mamNoel"/>
+
+
     </body>
 </html>

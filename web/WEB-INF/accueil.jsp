@@ -12,8 +12,11 @@
         <title>Accueil</title>
     </head>
     <body>
-        <h1>Welcome</h1>
-        <%@include file="menu.jsp" %>
+        <div ALIGN=center> 
+        <h1>Welcome à vous</h1>
+        <p> Petit panel de différents exercices sur les SERVLETS!!!</p>
+        </div>
+        <%@include file="menu.jsp" %>     
         
         
     </body>

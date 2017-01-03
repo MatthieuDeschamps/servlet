@@ -9,22 +9,41 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Bonjour</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <%@include file="menu.jsp" %>
-        <p>
-            <%
-                String heure = (String) request.getAttribute("heure");
-                if(heure.equals("jour")){
-                    
-                out.println("bonjour");
-                }else{
-                    out.println("bonsoir");
-                }
-            %>
-        </p>
+        <h1 ALIGN='center'>Hello World!</h1>
+
         
+
+
+        <%--Expression Language (EL) rempace toute les ligne de code java!!!
+        dans ce cas on fais un test si "name" est empty(vide) on renvoie rien 
+        avec une condition ternaire
+        <p>
+            Bonjour Monsieur ${ empty name ? '' : name }  
+        </p>
+        --%>
+        
+        
+        <%-- Ancienne méthode pour affichage sans EL    
+        <p> String name = (String) request.getAttribute("name");
+        out.println(name);
+        </p>
+        --%>
+
+
+        <%-- Expression Language avec affichage Tableau
+        <p> ${ nomis[1] }</p>
+        --%>
+        
+        <p ALIGN='center'>
+            Bonjour ${ auteur.prenom } ${ auteur.nom }
+        </p>
+        <p ALIGN='center'> ${ auteur.actif ? 'Bravo tu écris encore' : 'Au placart'}</p>
+       
+        <h4 ALIGN=center>
+            <a href="/applitest/">Retour</a>
+        </h4>
     </body>
 </html>

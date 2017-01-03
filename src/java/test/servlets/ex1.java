@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package test.servlets;
 
 import java.io.IOException;
@@ -17,27 +13,31 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author mdeschamps
  */
-@WebServlet(name = "Noel", urlPatterns = {"/Noel"})
-public class Noel extends HttpServlet {
+@WebServlet(name = "ex1", urlPatterns = {"/ex1"})
+public class ex1 extends HttpServlet {
 
-    public Noel(){
+    public ex1() {
         super();
     }
 
-   
+    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //String message = "Au revoir";
-        //request.setAttribute("heure", "soir");
-        this.getServletContext().getRequestDispatcher("/WEB-INF/noel.jsp").forward(request, response);
+        this.getServletContext().getRequestDispatcher("/WEB-INF/ex1.jsp").forward(request, response);
+       
     }
 
-   
+    
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+       
     }
+
+    @Override
+    public String getServletInfo() {
+        return "Short description";
+    }// </editor-fold>
 
 }
