@@ -10,5 +10,5 @@
     <li><a href="/applitest/bonjour"> Hello World</a></li>
     <li><a href="/applitest/noel"> Noyeux Joel</a></li>
     <li><a href="/applitest/ex1"> Exercice 1</a></li>
-    <li><a href="/applitest/ex2"> Exercice 2 ou les informations projet !!!</a></li>
+    <li><a href="/applitest/exercice2"> Exercice 2 ou les informations projet !!!</a></li>
 </ul>

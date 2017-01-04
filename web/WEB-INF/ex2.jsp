@@ -16,15 +16,15 @@
         
         <div>
             <ul>
-                <li> le protocole implanté par le serveur :  </li>
-                <li> le protocole utilisé par le client : </li>
-                <li> le nom du serveur : </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><% out.println("<br>" + "Protocole implanté par le serveur : " + request.getProtocol()); %></li>
+                <li><% out.println("<br>" + "Protocole utilisé par le client : " + request.getScheme()); %></li>
+                <li><% out.println("<br>" + "Nom du serveur : " + request.getServerName()); %></li>
+                <li><% out.println("<br>" + "Port du serveur : " + request.getServerPort()); %></li>
+                <li><% out.println("<br>" + "Adresse IP du serveur : " + request.getRemoteHost()); %></li>
+                <li><% out.println("<br>" + "Adresse IP du client : " + request.getRemoteAddr()); %></li>
+                <li><% out.println("<br>" + "Méthode http : " + request.getMethod()); %></li>
+                <li><% out.println("<br>" + "Le nom de ce script : " + request.getRequestURL()); %></li>
+                <li><% out.println("<br>" + "Le répertoire java est : " + request.getPathTranslated()); %></li>
             </ul>         
         </div>
     </body>

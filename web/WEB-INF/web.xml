@@ -6,7 +6,7 @@
          version="3.1">
     <session-config>
         <session-timeout>
-            30
+            15
         </session-timeout>
     </session-config>
     <servlet>
@@ -37,5 +37,15 @@
     <servlet-mapping>
         <servlet-name>Noel</servlet-name>
         <url-pattern>/noel</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ex2</servlet-name>
+        <servlet-class>test.servlets.ex2</servlet-class>
+    </servlet>
+  
+    <servlet-mapping>
+        <servlet-name>ex2</servlet-name>
+        <url-pattern>/exercice2</url-pattern>
     </servlet-mapping>
 </web-app>
